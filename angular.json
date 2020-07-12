@@ -43,12 +43,10 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "projects/admin/src/environments/environment.ts",
-                  "with": "projects/admin/src/environments/environment.prod.ts"
-                }
-              ],
+              "fileReplacements": [{
+                "replace": "projects/admin/src/environments/environment.ts",
+                "with": "projects/admin/src/environments/environment.prod.ts"
+              }],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -57,8 +55,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [
-                {
+              "budgets": [{
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
@@ -144,6 +141,147 @@
           }
         }
       }
-    }},
+    },
+    "cntt": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/cntt",
+      "sourceRoot": "projects/cntt/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/cntt",
+            "index": "projects/cntt/src/index.html",
+            "main": "projects/cntt/src/main.ts",
+            "polyfills": "projects/cntt/src/polyfills.ts",
+            "tsConfig": "projects/cntt/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/cntt/src/favicon.ico",
+              "projects/cntt/src/assets"
+            ],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/swiper/swiper-bundle.min.css",
+              "node_modules/select2/dist/css/select2.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/@mdi/font/css/materialdesignicons.css",
+              "projects/admin/src/assets/css/fontface.css",
+              "projects/admin/src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/swiper/swiper-bundle.min.js",
+              "node_modules/select2/dist/js/select2.min.js",
+              "node_modules/vanilla-lazyload/dist/lazyload.min.js",
+              "projects/admin/src/assets/js/main.min.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [{
+                "replace": "projects/cntt/src/environments/environment.ts",
+                "with": "projects/cntt/src/environments/environment.prod.ts"
+              }],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [{
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "cntt:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "cntt:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "cntt:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/cntt/src/test.ts",
+            "polyfills": "projects/cntt/src/polyfills.ts",
+            "tsConfig": "projects/cntt/tsconfig.spec.json",
+            "karmaConfig": "projects/cntt/karma.conf.js",
+            "assets": [
+              "projects/cntt/src/favicon.ico",
+              "projects/cntt/src/assets"
+            ],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/swiper/swiper-bundle.min.css",
+              "node_modules/select2/dist/css/select2.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/@mdi/font/css/materialdesignicons.css",
+              "projects/admin/src/assets/css/fontface.css",
+              "projects/admin/src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/swiper/swiper-bundle.min.js",
+              "node_modules/select2/dist/js/select2.min.js",
+              "node_modules/vanilla-lazyload/dist/lazyload.min.js",
+              "projects/admin/src/assets/js/main.min.js"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/cntt/tsconfig.app.json",
+              "projects/cntt/tsconfig.spec.json",
+              "projects/cntt/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/cntt/e2e/protractor.conf.js",
+            "devServerTarget": "cntt:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "cntt:serve:production"
+            }
+          }
+        }
+      }
+    }
+  },
   "defaultProject": "admin"
 }

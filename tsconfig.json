@@ -15,6 +15,15 @@
     },
     {
       "path": "./projects/admin/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/cntt/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/cntt/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/cntt/e2e/tsconfig.json"
     }
 ]
 }
