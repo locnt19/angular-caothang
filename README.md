@@ -2,18 +2,16 @@
 
 # Hướng dẫn sử dụng
 
-**Bước 1:** Lần đâu tiên clone source vê, ta cần bật `Terminal` tại thư mục `root` và chạy lên `npm install` hoặc `yarn install` để cài đặt các modules được sử dụng trong **source code**.
+**Bước 1:** Lần đâu tiên clone source vê, ta cần bật `Terminal` tại thư mục `root` và chạy lệnh `npm install` hoặc `yarn install` để cài đặt các modules được sử dụng trong **source code**.
 
-**Bước 2:** Bật `Terminal` tại thư mục `propjects/backend` và chạy lên `npm install` hoặc `yarn install` để cài đặt các modules được sử dụng trong project Backend-API.
+**Bước 2:** Bật `Terminal` tại thư mục `propjects/backend` và chạy lệnh `npm install` hoặc `yarn install` để cài đặt các modules được sử dụng trong project Backend-API.
 
 **Bước 3:** Bật `Terminal` tại thư mục `root` và chạy lên `npm start` hoặc `yarn start` để khởi chạy tất cả các project.
 
-  - project Backend-API chạy trên port: `:4100`
-  - project Admin chạy trên port: `:4200`
-  - project CNTT chạy trên port: `:4300`
-  - project Elearning chạy trên port: `:4400`
-
----
+  - project Backend-API chạy trên port `:4100`
+  - project Admin chạy trên port `:4200`
+  - project CNTT chạy trên port `:4300`
+  - project Elearning chạy trên port `:4400`
 
 # Các modules được sử dụng
 
@@ -84,4 +82,4 @@ Thêm thuộc tính `routerLink` vào thẻ `<a>` để có thể truy cập đ�
 
 VD: `<a routerLink="/chuongtrinhdaotao" routerLinkActive="active">`
 
-**Lưu ý:** Khi thêm router vào file `app-routing.module.ts` bắt buộc phải ***import*** PageComponents đó.
+**Lưu ý:** Khi thêm router vào file `app-routing.module.ts` bắt buộc phải **import** PageComponents đó.
