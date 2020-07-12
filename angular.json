@@ -153,7 +153,6 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/swiper/swiper-bundle.min.css",
-              "node_modules/select2/dist/css/select2.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
               "node_modules/@mdi/font/css/materialdesignicons.css",
               "projects/cntt/src/assets/css/fontface.css",
@@ -163,7 +162,6 @@
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/swiper/swiper-bundle.min.js",
-              "node_modules/select2/dist/js/select2.min.js",
               "node_modules/vanilla-lazyload/dist/lazyload.min.js",
               "projects/cntt/src/assets/js/main.min.js"
             ]
