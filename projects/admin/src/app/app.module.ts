@@ -43,6 +43,7 @@ import { ModalTracuuthongtinComponent } from './components/modal/elearning/modal
 import { ModalBaidangfacebookComponent } from './components/modal/facebook/modal-baidangfacebook/modal-baidangfacebook.component';
 import { ModalGroupfacebookComponent } from './components/modal/facebook/modal-groupfacebook/modal-groupfacebook.component';
 import { ModalPagefacebookComponent } from './components/modal/facebook/modal-pagefacebook/modal-pagefacebook.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { ModalPagefacebookComponent } from './components/modal/facebook/modal-pa
     ModalTracuuthongtinComponent,
     ModalBaidangfacebookComponent,
     ModalGroupfacebookComponent,
-    ModalPagefacebookComponent
+    ModalPagefacebookComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
