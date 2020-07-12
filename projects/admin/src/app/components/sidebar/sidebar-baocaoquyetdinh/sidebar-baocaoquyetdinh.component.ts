@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalService } from '../../../services/modal.service';
 
 @Component({
   selector: 'app-sidebar-baocaoquyetdinh',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarBaocaoquyetdinhComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: ModalService) { }
 
   ngOnInit(): void {
+  }
+
+  openModal(id: string) {
+    this.modalService.open(id)
   }
 
 }

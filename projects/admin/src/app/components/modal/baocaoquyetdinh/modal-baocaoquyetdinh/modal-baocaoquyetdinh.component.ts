@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalService } from '../../../../services/modal.service';
 
 @Component({
   selector: 'app-modal-baocaoquyetdinh',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalBaocaoquyetdinhComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: ModalService) { }
 
   ngOnInit(): void {
+  }
+
+  closeModal(id: string) {
+    this.modalService.close(id)
   }
 
 }

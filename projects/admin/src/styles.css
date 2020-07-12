@@ -388,6 +388,7 @@ main {
   display: block;
   border-radius: .5rem;
   transition: all .25s ease-in-out;
+  user-select: none;
 }
 
 .sidebar_chucnang__box:hover {

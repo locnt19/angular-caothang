@@ -44,6 +44,7 @@ import { ModalBaidangfacebookComponent } from './components/modal/facebook/modal
 import { ModalGroupfacebookComponent } from './components/modal/facebook/modal-groupfacebook/modal-groupfacebook.component';
 import { ModalPagefacebookComponent } from './components/modal/facebook/modal-pagefacebook/modal-pagefacebook.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { ModalQuanlyheadercnttComponent } from './components/modal/cntt/modal-quanlyheadercntt/modal-quanlyheadercntt.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +88,8 @@ import { ModalComponent } from './components/modal/modal.component';
     ModalBaidangfacebookComponent,
     ModalGroupfacebookComponent,
     ModalPagefacebookComponent,
-    ModalComponent
+    ModalComponent,
+    ModalQuanlyheadercnttComponent
   ],
   imports: [
     BrowserModule,
