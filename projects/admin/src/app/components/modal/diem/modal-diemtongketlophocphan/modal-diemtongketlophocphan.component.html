@@ -1,0 +1,147 @@
+<section class="modal_chucnang__wrapper" data-modal="sinhvienlophocphan">
+  <div class="modal_chucnang__close mdi mdi-chevron-left text-white"></div>
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center text-white">Điểm tổng kết lớp học phần</h1>
+      </div>
+      <div class="col-12">
+        <div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-3">
+              <div class="form-group">
+                <label>Bậc</label>
+                <select class="form-control">
+                  <option>Trung cấp</option>
+                  <option>Cao đẳng</option>
+                  <option>Đại học</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Khoá</label>
+                <input class="form-control" type="number" min="15" value="15">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label>Lớp</label>
+                <select class="form-control modal_chucnang__select2">
+                  <option>CĐ TH 16 PMC</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Học kì</label>
+                <div class="d-flex">
+                  <div class="d-flex align-items-center">
+                    <label class="mb-0 mr-2">Từ</label>
+                    <input class="form-control" type="number" min="1" value="1">
+                  </div>
+                  <div class="ml-2 d-flex align-items-center">
+                    <label class="mb-0 mr-2">đến</label>
+                    <input class="form-control" type="number" min="1" value="1">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label>Lớp học phần</label>
+                <select class="form-control modal_chucnang__select2">
+                  <option>Toán cao cấp</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Mã đào tạo</label>
+                <select class="form-control modal_chucnang__select2">
+                  <option>Mã đào tạo</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="modal_chucnang__group__button">
+                <button class="modal_chucnang__button btn btn-outline-primary px-4 mx-2"><img
+                    class="modal_chucnang__button__icon mb-1" src="assets/img/icons/search.png" alt="image icon">
+                  <div>Tìm kiếm</div>
+                </button>
+                <button class="modal_chucnang__button btn btn-outline-danger px-4 mx-2"><img
+                    class="modal_chucnang__button__icon mb-1" src="assets/img/icons/upgrade.png" alt="image icon">
+                  <div>Nộp bảng điểm</div>
+                </button>
+                <button class="modal_chucnang__button btn btn-outline-secondary px-4 mx-2"><img
+                    class="modal_chucnang__button__icon mb-2" src="assets/img/icons/print.png" alt="image icon">
+                  <div>In</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
+          <div class="d-flex align-items-center mb-2">
+            <label class="mb-0 d-flex align-items-center"><span class="text-nowrap">Hiển thị &nbsp;</span>
+              <select class="custom-select custom-select-sm form-control">
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+              </select><span class="text-nowrap">&nbsp; hàng</span>
+            </label>
+            <label class="ml-auto mb-0 d-flex align-items-center"><span class="text-nowrap">Bộ lọc: &nbsp;</span>
+              <input class="form-control form-control-sm" placeholder="Nhập từ khoá...">
+            </label>
+          </div>
+          <table class="modal_chucnang__table table table-hover" id="danhsach_sinhvienlophocphan">
+            <thead class="bg__caothang text-white">
+              <th class="text-center" scope="col">#</th>
+              <th scope="col">MSSV</th>
+              <th scope="col">Họ và tên</th>
+              <th scope="col">Điểm CC</th>
+              <th scope="col">Điểm TBKT</th>
+              <th scope="col">Điểm thi 1</th>
+              <th scope="col">Điểm thi 2</th>
+              <th scope="col">Điểm tổng kết 1</th>
+              <th scope="col">Điểm tổng kết 2</th>
+              <th scope="col">Điểm tổng kết</th>
+              <th scope="col">Ghi chú</th>
+              <th class="text-center" scope="col"><span
+                  class="modal_chucnang__button__save mdi mdi-content-save-outline mdi-24px"></span></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">100</td>
+                <td>0306161311</td>
+                <td>Nguyễn Thành Lộc</td>
+                <td style="width: 80px">
+                  <input class="form-control" disabled value="10">
+                </td>
+                <td style="width: 80px">
+                  <input class="form-control" disabled value="10">
+                </td>
+                <td style="width: 80px">
+                  <input class="form-control" disabled value="10">
+                </td>
+                <td style="width: 80px">
+                  <input class="form-control" disabled value="10">
+                </td>
+                <td style="width: 80px">
+                  <input class="form-control" disabled value="10">
+                </td>
+                <td style="width: 80px">
+                  <input class="form-control" disabled value="10">
+                </td>
+                <td style="width: 80px">
+                  <input class="form-control" disabled value="10">
+                </td>
+                <td>
+                  <input class="form-control" disabled value="Sinh viên xuất sắc">
+                </td>
+                <td class="text-center"><span
+                    class="modal_chucnang__button__edit mdi mdi-file-document-edit-outline mdi-24px"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

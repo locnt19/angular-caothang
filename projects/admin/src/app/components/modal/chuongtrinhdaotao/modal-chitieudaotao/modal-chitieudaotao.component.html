@@ -1,0 +1,160 @@
+<section class="modal_chucnang__wrapper" data-modal="chitieudaotao">
+  <div class="modal_chucnang__close mdi mdi-chevron-left text-white"></div>
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center text-white">Quản lý chỉ tiêu đào tạo</h1>
+      </div>
+      <div class="col-12">
+        <div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-3">
+              <div class="form-group">
+                <label>Bậc</label>
+                <select class="form-control">
+                  <option>Trung cấp</option>
+                  <option>Cao đẳng</option>
+                  <option>Đại học</option>
+                </select>
+              </div>
+              <div class="d-flex">
+                <div class="col p-0 form-group">
+                  <label>Loại hình đào tạo</label>
+                  <select class="form-control modal_chucnang__select2">
+                    <option>Chính quy</option>
+                    <option>Liên thông</option>
+                  </select>
+                </div>
+                <div class="ml-2">
+                  <div class="form-group">
+                    <label>Khoá</label>
+                    <input class="form-control" type="number" style="width: 80px" min="15" value="15">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label>Năm học</label>
+                <div class="d-flex">
+                  <input class="form-control" type="number" min="2016" value="2016">
+                  <input class="form-control ml-2" type="number" min="2016" value="2016">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Học kì</label>
+                <div class="d-flex">
+                  <div class="d-flex align-items-center">
+                    <label class="mb-0 mr-2">Từ</label>
+                    <input class="form-control" type="number" min="1" value="1">
+                  </div>
+                  <div class="ml-2 d-flex align-items-center">
+                    <label class="mb-0 mr-2">đến</label>
+                    <input class="form-control" type="number" min="1" value="1">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" id="chitieudaotaocheckbox0" type="checkbox">
+                <label class="custom-control-label" for="chitieudaotaocheckbox0">Chỉ tạo lớp</label>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="modal_chucnang__group__button">
+                <button class="modal_chucnang__button btn btn-outline-primary px-4"><img
+                    class="modal_chucnang__button__icon mb-2" src="assets/img/icons/books.png" alt="image icon">
+                  <div>Phát sinh lớp học phần</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
+          <ul class="pagination mb-3">
+            <li class="page-item active text-white"><a class="page-link text-reset" href="#">Chỉ tiêu</a></li>
+            <li class="page-item"><a class="page-link text-reset" href="#">Lớp học phần</a></li>
+            <li class="page-item"><a class="page-link text-reset" href="#">Sinh viên</a></li>
+          </ul>
+          <table class="modal_chucnang__table table table-hover" id="them_chitiet_chitieudaotao">
+            <thead class="bg__caothang text-white">
+              <th class="text-center" scope="col">#</th>
+              <th scope="col">Tên ngành</th>
+              <th scope="col">Số lượng</th>
+              <th scope="col">Ngành</th>
+              <th scope="col">Lớp</th>
+              <th scope="col">Chính quy</th>
+              <th scope="col">Số tuần</th>
+              <th scope="col">Loại môn</th>
+              <th scope="col">Tính</th>
+              <th scope="col">Xét</th>
+              <th class="text-center" scope="col"><span
+                  class="modal_chucnang__button__plus mdi mdi-plus mdi-24px"></span><span
+                  class="ml-2 modal_chucnang__button__save mdi mdi-content-save-outline mdi-24px"></span></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">1000</td>
+                <td>
+                  <select class="form-control">
+                    <option>Mạng máy tính</option>
+                    <option>Lập trình hướng đối tượng</option>
+                    <option>Cơ sở dữ liệu</option>
+                  </select>
+                </td>
+                <td>
+                  <select class="form-control">
+                    <option>Tin học</option>
+                    <option>Cơ khí</option>
+                    <option>Ô tô</option>
+                  </select>
+                </td>
+                <td>
+                  <select class="form-control">
+                    <option>Lý thuyết</option>
+                    <option>Thực hành</option>
+                    <option>Tốt nghiệp</option>
+                    <option>Module</option>
+                  </select>
+                </td>
+                <td style="max-width: 100px">
+                  <input class="form-control" placeholder="ĐVHT">
+                </td>
+                <td style="max-width: 100px">
+                  <input class="form-control" placeholder="Số tiết học">
+                </td>
+                <td style="max-width: 100px">
+                  <input class="form-control" placeholder="Số tuần">
+                </td>
+                <td>
+                  <select class="form-control">
+                    <option>Thực hành</option>
+                    <option>Lý thuyết</option>
+                    <option>Module</option>
+                  </select>
+                </td>
+                <td>
+                  <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" id="chitieudaotaocheckbox1" type="checkbox">
+                    <label class="custom-control-label" for="chitieudaotaocheckbox1"></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" id="chitieudaotaocheckbox2" type="checkbox">
+                    <label class="custom-control-label" for="chitieudaotaocheckbox2"></label>
+                  </div>
+                </td>
+                <td class="text-center"><span
+                    class="modal_chucnang__button__delete mdi mdi-delete-outline mdi-24px"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

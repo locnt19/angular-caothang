@@ -1,0 +1,115 @@
+<section class="modal_chucnang__wrapper" data-modal="nganhnghe">
+  <div class="modal_chucnang__close mdi mdi-chevron-left text-white"></div>
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center text-white">Quản lý ngành nghề</h1>
+      </div>
+      <div class="col-12">
+        <div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-3">
+              <div class="form-group">
+                <label>Tên ngành nghề</label>
+                <input class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Tên viết tắt</label>
+                <input class="form-control">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="row no-gutters">
+                <div class="form-group col-5">
+                  <label>Mã ngành nghề</label>
+                  <input class="form-control">
+                </div>
+                <div class="form-group col ml-2">
+                  <label>Bậc</label>
+                  <select class="form-control">
+                    <option>Cao đẳng</option>
+                    <option>Cao đẳng nghề</option>
+                    <option>Đại học</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Ngành cha</label>
+                <select class="form-control modal_chucnang__select2">
+                  <option>Ngành cha 1</option>
+                  <option>Ngành cha 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="modal_chucnang__group__button">
+                <button class="modal_chucnang__button btn btn-outline-primary px-4 mx-2"><img
+                    class="modal_chucnang__button__icon mb-2" src="assets/img/icons/add.png" alt="image icon">
+                  <div>Thêm mới</div>
+                </button>
+                <button class="modal_chucnang__button btn btn-outline-success px-4 mx-2"><img
+                    class="modal_chucnang__button__icon mb-2" src="assets/img/icons/upgrade.png" alt="image icon">
+                  <div>Cập nhật</div>
+                </button>
+                <button class="modal_chucnang__button btn btn-outline-danger px-4 mx-2" type="reset"><img
+                    class="modal_chucnang__button__icon mb-2" src="assets/img/icons/error.png" alt="image icon">
+                  <div>Huỷ</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
+          <div class="d-flex align-items-center mb-2">
+            <label class="mb-0 d-flex align-items-center"><span class="text-nowrap">Hiển thị &nbsp;</span>
+              <select class="custom-select custom-select-sm form-control">
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+              </select><span class="text-nowrap">&nbsp; hàng</span>
+            </label>
+            <label class="ml-auto mb-0 d-flex align-items-center"><span class="text-nowrap">Tìm kiếm: &nbsp;</span>
+              <input class="form-control form-control-sm" placeholder="Tìm kiếm">
+            </label>
+          </div>
+          <table class="modal_chucnang__table table table-hover" id="danhsach_nganhnghe">
+            <thead class="bg__caothang text-white">
+              <th>#</th>
+              <th class="text-center" scope="col" style="max-width: 100px">Mã NN</th>
+              <th scope="col">Tên ngành nghề</th>
+              <th scope="col">Tên viết tắt</th>
+              <th scope="col">Bậc</th>
+              <th scope="col">Ngành cha</th>
+              <th class="text-center" scope="col"><span
+                  class="modal_chucnang__button__save mdi mdi-content-save-outline mdi-24px"></span></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="max-width: 50px">1</td>
+                <td style="max-width: 100px">
+                  <input class="form-control" value="PM">
+                </td>
+                <td>
+                  <input class="form-control" value="Công nghệ phần mềm">
+                </td>
+                <td>
+                  <input class="form-control" value="PM">
+                </td>
+                <td>
+                  <input class="form-control" value="Cao đẳng">
+                </td>
+                <td>
+                  <input class="form-control" value="CNTT">
+                </td>
+                <td class="text-center"><span
+                    class="modal_chucnang__button__delete mdi mdi-delete-outline mdi-24px"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

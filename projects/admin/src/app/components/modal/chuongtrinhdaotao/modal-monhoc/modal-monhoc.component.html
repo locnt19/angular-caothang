@@ -1,0 +1,146 @@
+<section class="modal_chucnang__wrapper" data-modal="monhoc">
+  <div class="modal_chucnang__close mdi mdi-chevron-left text-white"></div>
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center text-white">Quản lý môn học</h1>
+      </div>
+      <div class="col-12">
+        <div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-3">
+              <div class="form-group">
+                <label>Tên môn học</label>
+                <input class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Tên viết tắt</label>
+                <input class="form-control">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label>Tên tiếng anh</label>
+                <input class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Tên tiếng anh viết tắt</label>
+                <input class="form-control">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label>Loại môn học</label>
+                <select class="form-control">
+                  <option>Thực hành</option>
+                  <option>Lý thuyết</option>
+                  <option>Module</option>
+                  <option>Tốt nghiệp</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="modal_chucnang__group__button">
+                <button class="modal_chucnang__button btn btn-outline-primary px-4 mx-2"><img
+                    class="modal_chucnang__button__icon mb-2" src="assets/img/icons/add.png" alt="image icon">
+                  <div>Thêm mới</div>
+                </button>
+                <button class="modal_chucnang__button btn btn-outline-success px-4 mx-2"><img
+                    class="modal_chucnang__button__icon mb-2" src="assets/img/icons/upgrade.png" alt="image icon">
+                  <div>Cập nhật</div>
+                </button>
+                <button class="modal_chucnang__button btn btn-outline-danger px-4 mx-2" type="reset"><img
+                    class="modal_chucnang__button__icon mb-2" src="assets/img/icons/error.png" alt="image icon">
+                  <div>Huỷ</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
+          <div class="d-flex align-items-center mb-2">
+            <label class="mb-0 d-flex align-items-center"><span class="text-nowrap">Hiển thị &nbsp;</span>
+              <select class="custom-select custom-select-sm form-control">
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+              </select><span class="text-nowrap">&nbsp; hàng</span>
+            </label>
+            <label class="ml-auto mb-0 d-flex align-items-center"><span class="text-nowrap">Tìm kiếm: &nbsp;</span>
+              <input class="form-control form-control-sm" placeholder="Tìm kiếm">
+            </label>
+          </div>
+          <table class="modal_chucnang__table table table-hover" id="danhsach_monhoc">
+            <thead class="bg__caothang text-white">
+              <th class="text-center" scope="col" style="max-width: 100px">Mã MH</th>
+              <th scope="col">Tên môn học</th>
+              <th scope="col">Tên viết tắt</th>
+              <th scope="col">Tên tiếng anh</th>
+              <th scope="col">Tên tiếng anh viết tắt</th>
+              <th scope="col">Loại môn học</th>
+              <th class="text-center" scope="col"><span
+                  class="modal_chucnang__button__save mdi mdi-content-save-outline mdi-24px"></span></th>
+            </thead>
+            <tfoot class="d-none">
+              <tr>
+                <td style="max-width: 100px">
+                  <input class="form-control">
+                </td>
+                <td>
+                  <input class="form-control">
+                </td>
+                <td>
+                  <input class="form-control">
+                </td>
+                <td>
+                  <input class="form-control">
+                </td>
+                <td>
+                  <input class="form-control">
+                </td>
+                <td>
+                  <select class="form-control">
+                    <option>Thực hành</option>
+                    <option>Lý thuyết</option>
+                    <option>Module</option>
+                  </select>
+                </td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td style="max-width: 100px">
+                  <input class="form-control" disabled value="0001">
+                </td>
+                <td>
+                  <input class="form-control" disabled value="Công nghệ thông tin">
+                </td>
+                <td>
+                  <input class="form-control" disabled value="CNTT">
+                </td>
+                <td>
+                  <input class="form-control" disabled value="Information Technology">
+                </td>
+                <td>
+                  <input class="form-control" disabled value="IT">
+                </td>
+                <td>
+                  <select class="form-control" disabled>
+                    <option>Thực hành</option>
+                    <option>Lý thuyết</option>
+                    <option>Module</option>
+                  </select>
+                </td>
+                <td class="text-center"><span
+                    class="modal_chucnang__button__edit mdi mdi-file-document-edit-outline mdi-24px"></span><span
+                    class="modal_chucnang__button__delete mdi mdi-delete-outline mdi-24px"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

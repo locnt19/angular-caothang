@@ -1,0 +1,166 @@
+<section class="modal_chucnang__wrapper" data-modal="giaovien">
+  <div class="modal_chucnang__close mdi mdi-chevron-left text-white"></div>
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center text-white">Giáo viên</h1>
+      </div>
+      <div class="col-12">
+        <div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-3">
+              <div class="form-group">
+                <label>Họ</label>
+                <input class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Tên</label>
+                <input class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Ngày sinh</label>
+                <input class="form-control">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label>Địa chỉ thường trú</label>
+                <input class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Số điện thoại</label>
+                <input class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input class="form-control">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label>Bộ môn</label>
+                <select class="form-control modal_chucnang__select2">
+                  <option>Bộ môn tin học</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Chức vụ</label>
+                <select class="form-control">
+                  <option>Trưởng Khoa</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Đơn vị</label>
+                <select class="form-control modal_chucnang__select2">
+                  <option>Khoa Công nghệ thông tin</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label>Mã giáo viên</label>
+                <div class="d-flex align-items-center">
+                  <input class="form-control" readonly value="0001">
+                  <div class="mdi mdi-reload mdi-24px ml-2"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Mật khẩu ban đầu cho giáo viên mới</label>
+                <input class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Trình độ chuyên môn</label>
+                <select class="form-control">
+                  <option>Thạc sĩ</option>
+                  <option>Tiến sĩ</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="modal_chucnang__group__button">
+                <button class="modal_chucnang__button btn btn-outline-primary px-4 mx-2"><img
+                    class="modal_chucnang__button__icon mb-1" src="assets/img/icons/add.png" alt="image icon">
+                  <div>Thêm giáo viên</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
+          <div class="d-flex align-items-center mb-2">
+            <label class="mb-0 d-flex align-items-center"><span class="text-nowrap">Hiển thị &nbsp;</span>
+              <select class="custom-select custom-select-sm form-control">
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+              </select><span class="text-nowrap">&nbsp; hàng</span>
+            </label>
+            <label class="ml-auto mb-0 d-flex align-items-center"><span class="text-nowrap">Bộ lọc: &nbsp;</span>
+              <input class="form-control form-control-sm" placeholder="Nhập từ khoá...">
+            </label>
+          </div>
+          <div class="modal_chucnang__table__giaovien table-responsive">
+            <table class="modal_chucnang__table table table-hover" id="danhsach_giaovien">
+              <thead class="bg__caothang text-white">
+                <th class="text-center" scope="col"><span
+                    class="modal_chucnang__button__save mdi mdi-content-save-outline mdi-24px"></span></th>
+                <th class="text-center" scope="col">Mã GV</th>
+                <th scope="col">Họ và tên</th>
+                <th scope="col">Email</th>
+                <th scope="col">Ngày sinh</th>
+                <th scope="col">Số điện thoại</th>
+                <th scope="col">Bộ môn</th>
+                <th scope="col">Chức vụ</th>
+                <th scope="col">Đơn vị</th>
+                <th scope="col">Trình độ</th>
+                <th scope="col">Địa chỉ </th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center"><span
+                      class="modal_chucnang__button__edit mdi mdi-file-document-edit-outline mdi-24px"></span></td>
+                  <td class="text-muted text-center" style="min-width: 100px">GV0001</td>
+                  <td>
+                    <input class="form-control" disabled value="Lữ Cao Tiến">
+                  </td>
+                  <td>
+                    <input class="form-control" disabled value="lucaotien@caothang.edu.vn">
+                  </td>
+                  <td>
+                    <input class="form-control" disabled value="19/09/1998">
+                  </td>
+                  <td>
+                    <input class="form-control" disabled value="0123456789">
+                  </td>
+                  <td>
+                    <select class="form-control modal_chucnang__select2" disabled>
+                      <option>Bộ môn tin học</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control" disabled>
+                      <option>Trưởng Khoa</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select class="form-control modal_chucnang__select2" disabled>
+                      <option>Khoa Công nghệ thông tin</option>
+                    </select>
+                  </td>
+                  <td style="min-width: 150px">
+                    <input class="form-control" disabled value="Thạc sĩ">
+                  </td>
+                  <td>
+                    <input class="form-control" disabled value="223 Lê Tấn Bê, Phường An Lạc, Quận Bình Tân">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
