@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently \"npm:run-*\"",
+    "run-backend": "node projects/backend/server.js",
+    "run-admin": "ng serve admin --port=4200",
+    "run-cntt": "ng serve cntt --port=4300",
+    "run-elearning": "ng serve elearning --port=4400",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
