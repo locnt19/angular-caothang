@@ -98,21 +98,9 @@
               "projects/admin/src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/swiper/swiper-bundle.min.css",
-              "node_modules/select2/dist/css/select2.min.css",
-              "node_modules/@fortawesome/fontawesome-free/css/all.css",
-              "node_modules/@mdi/font/css/materialdesignicons.css",
               "projects/admin/src/styles.css"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "node_modules/swiper/swiper-bundle.min.js",
-              "node_modules/select2/dist/js/select2.min.js",
-              "node_modules/vanilla-lazyload/dist/lazyload.min.js",
-              "projects/admin/src/assets/js/main.min.js"
-            ]
+            "scripts": []
           }
         },
         "lint": {
@@ -168,8 +156,8 @@
               "node_modules/select2/dist/css/select2.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
               "node_modules/@mdi/font/css/materialdesignicons.css",
-              "projects/admin/src/assets/css/fontface.css",
-              "projects/admin/src/styles.css"
+              "projects/cntt/src/assets/css/fontface.css",
+              "projects/cntt/src/styles.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -177,7 +165,7 @@
               "node_modules/swiper/swiper-bundle.min.js",
               "node_modules/select2/dist/js/select2.min.js",
               "node_modules/vanilla-lazyload/dist/lazyload.min.js",
-              "projects/admin/src/assets/js/main.min.js"
+              "projects/cntt/src/assets/js/main.min.js"
             ]
           },
           "configurations": {
@@ -237,22 +225,9 @@
               "projects/cntt/src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/swiper/swiper-bundle.min.css",
-              "node_modules/select2/dist/css/select2.min.css",
-              "node_modules/@fortawesome/fontawesome-free/css/all.css",
-              "node_modules/@mdi/font/css/materialdesignicons.css",
-              "projects/admin/src/assets/css/fontface.css",
-              "projects/admin/src/styles.css"
+              "projects/cntt/src/styles.css"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "node_modules/swiper/swiper-bundle.min.js",
-              "node_modules/select2/dist/js/select2.min.js",
-              "node_modules/vanilla-lazyload/dist/lazyload.min.js",
-              "projects/admin/src/assets/js/main.min.js"
-            ]
+            "scripts": []
           }
         },
         "lint": {
@@ -277,6 +252,127 @@
           "configurations": {
             "production": {
               "devServerTarget": "cntt:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "elearning": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/elearning",
+      "sourceRoot": "projects/elearning/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/elearning",
+            "index": "projects/elearning/src/index.html",
+            "main": "projects/elearning/src/main.ts",
+            "polyfills": "projects/elearning/src/polyfills.ts",
+            "tsConfig": "projects/elearning/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/elearning/src/favicon.ico",
+              "projects/elearning/src/assets"
+            ],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/@mdi/font/css/materialdesignicons.css",
+              "projects/elearning/src/assets/css/fontface.css",
+              "projects/elearning/src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [{
+                "replace": "projects/elearning/src/environments/environment.ts",
+                "with": "projects/elearning/src/environments/environment.prod.ts"
+              }],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [{
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "elearning:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "elearning:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "elearning:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/elearning/src/test.ts",
+            "polyfills": "projects/elearning/src/polyfills.ts",
+            "tsConfig": "projects/elearning/tsconfig.spec.json",
+            "karmaConfig": "projects/elearning/karma.conf.js",
+            "assets": [
+              "projects/elearning/src/favicon.ico",
+              "projects/elearning/src/assets"
+            ],
+            "styles": [
+              "projects/elearning/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/elearning/tsconfig.app.json",
+              "projects/elearning/tsconfig.spec.json",
+              "projects/elearning/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/elearning/e2e/protractor.conf.js",
+            "devServerTarget": "elearning:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "elearning:serve:production"
             }
           }
         }

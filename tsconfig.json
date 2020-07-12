@@ -24,6 +24,15 @@
     },
     {
       "path": "./projects/cntt/e2e/tsconfig.json"
+    },
+    {
+      "path": "./projects/elearning/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/elearning/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/elearning/e2e/tsconfig.json"
     }
 ]
 }
