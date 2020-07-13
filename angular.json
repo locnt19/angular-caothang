@@ -162,7 +162,7 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "node_modules/aos/dist/aos.css",
+              "node_modules/aos/dist/aos.js",
               "node_modules/swiper/swiper-bundle.min.js",
               "node_modules/vanilla-lazyload/dist/lazyload.min.js",
               "projects/cntt/src/assets/js/main.min.js"

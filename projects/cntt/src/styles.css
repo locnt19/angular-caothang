@@ -40,11 +40,11 @@ body {
   color: #283790; }
 
 .bg__image__1 {
-  background: url("../img/backgrounds/bg__image__1.jpg") center center fixed;
+  background: url("assets/img/backgrounds/bg__image__1.jpg") center center fixed;
   background-size: cover; }
 
 .bg__image__2 {
-  background: url("../img/backgrounds/bg__image__2.jpg") center center fixed;
+  background: url("assets/img/backgrounds/bg__image__2.jpg") center center fixed;
   background-size: cover; }
 
 .bg__light {
