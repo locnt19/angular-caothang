@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PageTrangchuComponent } from './pages/page-trangchu/page-trangchu.component';
 import { PageNotfoundComponent } from './pages/page-notfound/page-notfound.component';
+import { HomeHighlightComponent } from './components/home/home-highlight/home-highlight.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PageNotfoundComponent } from './pages/page-notfound/page-notfound.compo
     HeaderComponent,
     FooterComponent,
     PageTrangchuComponent,
-    PageNotfoundComponent
+    PageNotfoundComponent,
+    HomeHighlightComponent
   ],
   imports: [
     BrowserModule,
