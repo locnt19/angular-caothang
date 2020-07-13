@@ -1,0 +1,68 @@
+# Structure & Generate
+
+├── projects
+│  ├── backend
+│  │  ├── api
+│  │  │  ├── api.js => Import các ĐỐI TƯỢNG và cài đặt route cho từng ĐỐI TƯỢNG
+│  │  │  ├── TenDoiTuong.js => Export các hàm xử lý dữ liệu của ĐỐI TƯỢNG đó
+│  │  ├── server.js => Kết nối với MongoDB ở file này
+│  ├── admin (cntt, elearning tương tự)
+│  │  ├── src
+│  │  │  ├── assets
+│  │  │  │  ├── js
+│  │  │  │  ├── css
+│  │  │  │  │  ├── fonface.css => Import @fonface của webfont tại file này
+│  │  │  │  ├── fonts => Chứa các webfont được sử dụng trong project
+│  │  │  │  ├── img => Chứa các hình ảnh được sử dụng trong project
+│  │  │  ├── app
+│  │  │  │  ├── services
+│  │  │  │  │  ├── TenDoiTuong.service.ts => Export class ĐỐI TƯỢNG chứa các hàm xử lý với project Backend-API
+│  │  │  │  │  ├── Tạo Service mới bằng lệnh `ng g service services/TenDoiTuong --skipTests=true --project='tên project'`
+│  │  │  │  ├── models
+│  │  │  │  │  ├── TenDoiTuong.ts => Định nghĩa Đối tượng
+│  │  │  │  ├── pages
+│  │  │  │  │  ├── page-tenpage
+│  │  │  │  │  │  ├── page-tenpage.component.html => Chứa các đoạn HTML hoặc các `doituong.component` khác (không import các page.component khác vào đây)
+│  │  │  │  │  │  ├── page-tenpage.component.css
+│  │  │  │  │  │  ├── page-tenpage.component.ts => Nơi chứa các đoạn code xử lý sự kiện từ file html trên
+│  │  │  │  │  ├── Tạo Page mới bằng lệnh `ng g c pages/PageTenpage --skipTests=true --project='tên project'`. Chú ý: phải có tiền tố `Page` ở phía trước tên page
+│  │  │  │  ├── components
+│  │  │  │  │  ├── doituong
+│  │  │  │  │  │  ├── doituong.component.html => Chứa các đoạn HTML hoặc các `doituong.component` khác (không import các `page.component` vào đây)
+│  │  │  │  │  │  ├── doituong.component.css
+│  │  │  │  │  │  ├── doituong.component.ts => Nơi chứa các đoạn code xử lý sự kiện từ file html trên
+│  │  │  │  │  ├── Tạo Component mới bằng lệnh `ng g c components/doituong --skipTests=true --project='tên project'`
+│  │  │  │  │  │  ├── doituong-doituongcon
+│  │  │  │  │  │  │  ├── doituong-doituongcon.component.html => Chứa các đoạn HTML hoặc các `doituong.component` khác (không import các `page.component` vào đây)
+│  │  │  │  │  │  │  ├── doituong-doituongcon.component.css
+│  │  │  │  │  │  │  ├── doituong-doituongcon.component.ts => Nơi chứa các đoạn code xử lý sự kiện từ file html trên
+│  │  │  │  │  │  ├── Tạo Component con mới bằng lệnh `ng g c components/doituong/doituongDoituongcon --skipTests=true --project='tên project'`
+│  │  │  │  ├── app.component.html => Master Page của project, chứa các bắt buộc phải có cặp thẻ `<router-outlet></router-outlet>`
+│  │  │  │  ├── app-routing.module.ts => Chứa các Router để chuyển tới các `page.component` (Xem ví dụ tại projects/admin)
+├── angular.json
+│  ├── projects
+│  │  ├── admin (cntt, elearning tương tự)
+│  │  │  ├── architect
+│  │  │  │  ├── build => Chú ý: Chỉ sử ở phần này, KHÔNG SỬA BẤT KÌ GÌ KHÁC NGOÀI MỤC NÀY
+│  │  │  │  │  ├── options
+│  │  │  │  │  │  ├── styles => Import các file .css từ các module thư viện UI như Bootstrap, Swiper, Các font icon,...
+│  │  │  │  │  │  ├── scripts => Import các file .js từ các module thư viện UI như Bootstrap, Jquery, Swiper,...
+├── package.json
+│  ├── scripts
+│  │  ├── start => start 4 project cùng 1 lúc
+│  │  ├── run-backend => start 1 project Backend-API
+│  │  ├── run-admin => start 1 project Admin
+│  │  ├── run-cntt => start 1 project CNTT
+│  │  ├── run-elearning => start 1 project Elearning
+
+
+
+# SCRIPT RUN
+
+Để sử dụng các lệnh `yarn` bắt buộc phải cài đặt yarn vào máy tính của bạn. Chạy lệnh `npm i -g yarn` để cài đặt, sau đó reset lại máy tính.
+
+Script run: `npm start` hoặc `yarn start`: start 4 project cùng 1 lúc
+Script run: `npm run run-backend` hoặc `yarn run-backend`: start 1 project Backend-API
+Script run: `npm run run-admin` hoặc `yarn run-admin`: start 1 project Admin
+Script run: `npm run run-cntt` hoặc `yarn run-cntt`: start 1 project CNTT
+Script run: `npm run run-elearning` hoặc `yarn run-elearning`: start 1 project Elearning

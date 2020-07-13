@@ -48,38 +48,20 @@
 3. express@4.17.1
 4. mongoose@5.9.23
 
----
+# Structure & Generate
 
-# Generate
+Xem chi tiết tại `structure.txt`
 
-### Tạo 1 components mới cho project
+# SCRIPT RUN
 
-```
-ng g c components/<Đối tượng>/<Đối tượng + Tên component> --skipTests=true --project=<Tên project>
-```
+Để sử dụng các lệnh `yarn` bắt buộc phải cài đặt yarn vào máy tính của bạn. Chạy lệnh `npm i -g yarn` để cài đặt, sau đó reset lại máy tính.
 
-VD:
+Script run: `npm start` hoặc `yarn start`: start 4 project cùng 1 lúc
 
-```
-ng g c components/modal/ModalDiemsinhvien --skipTests=true --project=admin
-```
+Script run: `npm run run-backend` hoặc `yarn run-backend`: start 1 project Backend-API
 
-### Tạo 1 page mới
+Script run: `npm run run-admin` hoặc `yarn run-admin`: start 1 project Admin
 
-```
-ng g c pages/<Page + Tên page> --skipTests=true --project=<Tên project>
-```
+Script run: `npm run run-cntt` hoặc `yarn run-cntt`: start 1 project CNTT
 
-VD:
-
-```
-ng g c pages/PageTintuc --skipTests=true --project=cntt
-```
-
-Khi đã tạo Page components, ta phải thêm router vào file `app-routing.module.ts` ở thư mục `app` 
-
-Thêm thuộc tính `routerLink` vào thẻ `<a>` để có thể truy cập được Page đó trên trình duyệt.
-
-VD: `<a routerLink="/chuongtrinhdaotao" routerLinkActive="active">`
-
-**Lưu ý:** Khi thêm router vào file `app-routing.module.ts` bắt buộc phải **import** PageComponents đó.
+Script run: `npm run run-elearning` hoặc `yarn run-elearning`: start 1 project Elearning
