@@ -1,71 +1,244 @@
 <header class="header_master sticky-top">
   <div class="header_desktop bg__caothang d-none d-lg-block">
-    <nav class="header_navbar"><a class="d-block ml-3" href="index.html"><img class="header_logo__desktop" src="assets/img/logo/logo.jpg" alt="logo Cao Thắng"></a>
-      <nav class="nav header_navbar__nav ml-auto"><a class="header_navbar__nav__item text-decoration-none" href="#"><span class="header_navbar__nav__icon mdi mdi-home-outline"></span>
-          <div>Trang chủ</div></a>
-        <div class="header_navbar__nav__item header_dropdown text-decoration-none"><span class="header_navbar__nav__icon mdi mdi-information-outline"></span>
+    <nav class="header_navbar">
+      <a class="d-block ml-3" routerLink="">
+        <img class="header_logo__desktop" src="assets/img/logo/logo.jpg" alt="logo Cao Thắng">
+      </a>
+      <nav class="nav header_navbar__nav ml-auto">
+        <a class="header_navbar__nav__item text-decoration-none" routerLink="">
+          <span class="header_navbar__nav__icon mdi mdi-home-outline"></span>
+          <div>Trang chủ</div>
+        </a>
+        <div class="header_navbar__nav__item header_dropdown text-decoration-none">
+          <span class="header_navbar__nav__icon mdi mdi-information-outline"></span>
           <div>Giới thiệu</div>
-          <div class="header_dropdown__menu shadow"><a class="header_dropdown__item" href="#">Giới thiệu chung</a><a class="header_dropdown__item" href="#">Tầm nhìn - sứ mạng</a><a class="header_dropdown__item" href="#">Mục tiêu đào tạo</a><a class="header_dropdown__item" href="#">Ban chủ nhiệm Khoa</a><a class="header_dropdown__item" href="#">Các bộ phận & Hội đồng</a><a class="header_dropdown__item" href="#">Đội ngũ giáo viên</a><a class="header_dropdown__item" href="#">Liên hệ</a></div>
+          <div class="header_dropdown__menu shadow">
+            <a class="header_dropdown__item" routerLink="/about/gioi-thieu-chung">Giới thiệu chung</a>
+            <a class="header_dropdown__item" routerLink="/about/tam-nhin-su-mang">Tầm nhìn - sứ mạng</a>
+            <a class="header_dropdown__item" routerLink="/about/muc-tieu-dao-tao">Mục tiêu đào tạo</a>
+            <a class="header_dropdown__item" routerLink="/about/ban-chu-nhiem-khoa">Ban chủ nhiệm Khoa</a>
+            <a class="header_dropdown__item" routerLink="/about/cac-bo-phan-hoi-dong">Các bộ phận & Hội đồng</a>
+            <a class="header_dropdown__item" routerLink="/about/doi-ngu-giao-vien">Đội ngũ giáo viên</a>
+            <a class="header_dropdown__item" routerLink="/about/lien-he">Liên hệ</a></div>
         </div>
-        <div class="header_navbar__nav__item header_dropdown text-decoration-none"><span class="header_navbar__nav__icon mdi mdi-bell-circle-outline"></span>
+        <div class="header_navbar__nav__item header_dropdown text-decoration-none">
+          <span class="header_navbar__nav__icon mdi mdi-bell-circle-outline"></span>
           <div>Thông báo</div>
-          <div class="header_dropdown__menu shadow"><a class="header_dropdown__item" href="#">Thông báo Trường</a><a class="header_dropdown__item" href="#">Thông báo CĐ Tin Học</a><a class="header_dropdown__item" href="#">Thông báo CĐ Nghề</a></div>
+          <div class="header_dropdown__menu shadow">
+            <a class="header_dropdown__item" href="#">Thông báo Trường</a>
+            <a class="header_dropdown__item" href="#">Thông báo CĐ Tin Học</a>
+            <a class="header_dropdown__item" href="#">Thông báo CĐ Nghề</a></div>
         </div>
-        <div class="header_navbar__nav__item header_dropdown text-decoration-none"><span class="header_navbar__nav__icon mdi mdi-school-outline"></span>
+        <div class="header_navbar__nav__item header_dropdown text-decoration-none">
+          <span class="header_navbar__nav__icon mdi mdi-school-outline"></span>
           <div>Sinh viên</div>
-          <div class="header_dropdown__menu shadow"><a class="header_dropdown__item" href="#">Cựu sinh viên</a><a class="header_dropdown__item" href="#">Thời khóa biểu</a><a class="header_dropdown__item" href="#">E-Learning</a><a class="header_dropdown__item" href="#">Tài liệu học tập</a><a class="header_dropdown__item" href="#">Tra cứu</a><a class="header_dropdown__item" href="#">Mẫu đơn</a><a class="header_dropdown__item" href="#">Việc làm</a></div>
+          <div class="header_dropdown__menu shadow">
+            <a class="header_dropdown__item" href="#">Cựu sinh viên</a>
+            <a class="header_dropdown__item" href="#">Thời khóa biểu</a>
+            <a class="header_dropdown__item" href="#">E-Learning</a>
+            <a class="header_dropdown__item" href="#">Tài liệu học tập</a>
+            <a class="header_dropdown__item" href="#">Tra cứu</a>
+            <a class="header_dropdown__item" href="#">Mẫu đơn</a>
+            <a class="header_dropdown__item" href="#">Việc làm</a>
+          </div>
         </div>
-        <div class="header_navbar__nav__item header_dropdown text-decoration-none"><span class="header_navbar__nav__icon mdi mdi-medal-outline"></span>
+        <div class="header_navbar__nav__item header_dropdown text-decoration-none">
+          <span class="header_navbar__nav__icon mdi mdi-medal-outline"></span>
           <div>Hợp tác & nghiên cứu</div>
-          <div class="header_dropdown__menu shadow"><a class="header_dropdown__item" href="#">Hợp tác quốc tế</a><a class="header_dropdown__item" href="#">Công trình khoa học</a><a class="header_dropdown__item" href="#">Bảng vàng thành tích</a><a class="header_dropdown__item" href="#">Doanh nghiệp đồng hành</a></div>
+          <div class="header_dropdown__menu shadow">
+            <a class="header_dropdown__item" href="#">Hợp tác quốc tế</a>
+            <a class="header_dropdown__item" href="#">Công trình khoa học</a>
+            <a class="header_dropdown__item" href="#">Bảng vàng thành tích</a>
+            <a class="header_dropdown__item" href="#">Doanh nghiệp đồng hành</a>
+          </div>
         </div>
       </nav>
     </nav>
   </div>
-  <div class="header_mobile bg__caothang d-lg-none"><a href="index.html"><img class="header_logo__mobile" src="assets/img/logo/logo.jpg" alt="logo.jpg"></a><a class="offcanvas_button__open mdi mdi-menu text-white" href="#" role="button"></a>
+  <div class="header_mobile bg__caothang d-lg-none">
+    <a href="index.html">
+      <img class="header_logo__mobile" src="assets/img/logo/logo.jpg" alt="logo.jpg">
+    </a>
+    <a class="offcanvas_button__open mdi mdi-menu text-white" href="#" role="button">
+
+    </a>
     <div class="offcanvas offcanvas_overlay">
       <div class="offcanvas_bar">
-        <div class="offcanvas_header"><a href="index.html"><img class="lazy offcanvas_header__logo" data-src="assets/img/logo/logo.jpg" alt="logo.jpg"></a></div>
+        <div class="offcanvas_header">
+          <a href="index.html">
+            <img class="lazy offcanvas_header__logo" data-src="assets/img/logo/logo.jpg" alt="logo.jpg">
+          </a>
+        </div>
         <ul class="offcanvas_nav">
-          <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="index.html"><span class="offcanvas_icons mdi mdi-home-outline"></span><span class="text">Trang chủ</span></a></li>
-          <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-information-outline"></span><span class="text">Giới thiệu</span></a>
-            <ul class="offcanvas_nav__sub">
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Giới thiệu chung</span></a></li>
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Tầm nhìn - sứ mạng</span></a></li>
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Mục tiêu đào tạo</span></a></li>
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Ban chủ nhiệm Khoa</span></a></li>
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Các bộ phận & Hội đồng</span></a></li>
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Đội ngũ giáo viên</span></a></li>
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Liên hệ</span></a></li>
-            </ul>
-          </li>
-          <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-bell-circle-outline"></span><span class="text">Thông báo</span></a>
-            <ul class="offcanvas_nav__sub">
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Thông báo Trường</span></a></li>
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Thông báo CĐ Tin Học</span></a></li>
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Thông báo CĐ Nghề</span></a></li>
-            </ul>
-          </li>
-          <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-medal-outline"></span><span class="text">Hợp tác & nghiên cứu</span></a>
-            <ul class="offcanvas_nav__sub">
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Hợp tác quốc tế</span></a></li>
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Công trình khoa học</span></a></li>
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Bảng vàng thành tích</span></a></li>
-              <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Doanh nghiệp đồng hành</span></a></li>
-            </ul>
-          </li>
-          <li class="offcanvas_nav__divider"></li>
-          <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-domain"></span><span class="text">Trung tâm Tin học</span></a></li>
-          <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-layers-triple-outline"></span><span class="text">Danh sách học phần</span></a></li>
-          <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-stack-overflow"></span><span class="text">Tài liệu học tập</span></a></li>
-          <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-near-me"></span><span class="text">Cơ hội việc làm</span></a></li>
-          <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-laptop"></span><span class="text">E-learning</span></a></li>
-          <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-school"></span><span class="text">Cựu Sinh viên</span></a></li>
-          <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-folder-account"></span><span class="text">Tra cứu thông tin học viên</span></a></li>
-          <li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-calendar-check"></span><span class="text">Lịch thi</span></a></li>
-          <li class="offcanvas_nav__divider"></li>
           <li class="offcanvas_nav__item">
-            <div class="d-block offcanvas_button__close" role="button"><span class="offcanvas_icons mdi mdi-close"></span>Đóng</div>
+            <a class="offcanvas_nav__link" href="index.html">
+              <span class="offcanvas_icons mdi mdi-home-outline"></span>
+              <span class="text">Trang chủ</span>
+            </a>
+          </li>
+          <li class="offcanvas_nav__item">
+            <a class="offcanvas_nav__link" href="#">
+              <span class="offcanvas_icons mdi mdi-information-outline"></span>
+              <span class="text">Giới thiệu</span>
+            </a>
+            <ul class="offcanvas_nav__sub">
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Giới thiệu chung</span>
+                </a>
+              </li>
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Tầm nhìn - sứ mạng</span>
+                </a>
+              </li>
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Mục tiêu đào tạo</span>
+                </a>
+              </li>
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Ban chủ nhiệm Khoa</span>
+                </a>
+              </li>
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Các bộ phận & Hội đồng</span>
+                </a>
+              </li>
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Đội ngũ giáo viên</span>
+                </a>
+              </li>
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Liên hệ</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="offcanvas_nav__item">
+            <a class="offcanvas_nav__link" href="#">
+              <span class="offcanvas_icons mdi mdi-bell-circle-outline"></span>
+              <span class="text">Thông báo</span>
+            </a>
+            <ul class="offcanvas_nav__sub">
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Thông báo Trường</span>
+                </a>
+              </li>
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Thông báo CĐ Tin Học</span>
+                </a>
+              </li>
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Thông báo CĐ Nghề</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="offcanvas_nav__item">
+            <a class="offcanvas_nav__link" href="#">
+              <span class="offcanvas_icons mdi mdi-medal-outline"></span>
+              <span class="text">Hợp tác & nghiên cứu</span>
+            </a>
+            <ul class="offcanvas_nav__sub">
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Hợp tác quốc tế</span>
+                </a>
+              </li>
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Công trình khoa học</span>
+                </a>
+              </li>
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Bảng vàng thành tích</span>
+                </a>
+              </li>
+              <li class="offcanvas_nav__item">
+                <a class="offcanvas_nav__link" href="#">
+                  <span class="offcanvas_icons lnr lnr-chevron-right"></span>
+                  <span class="text">Doanh nghiệp đồng hành</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="offcanvas_nav__divider">
+          </li>
+          <li class="offcanvas_nav__item">
+            <a class="offcanvas_nav__link" href="#">
+              <span class="offcanvas_icons mdi mdi-domain"></span>
+              <span class="text">Trung tâm Tin học</span>
+            </a>
+          </li>
+          <li class="offcanvas_nav__item">
+            <a class="offcanvas_nav__link" href="#">
+              <span class="offcanvas_icons mdi mdi-layers-triple-outline"></span>
+              <span class="text">Danh sách học phần</span>
+            </a>
+          </li>
+          <li class="offcanvas_nav__item">
+            <a class="offcanvas_nav__link" href="#">
+              <span class="offcanvas_icons mdi mdi-stack-overflow"></span>
+              <span class="text">Tài liệu học tập</span>
+            </a>
+          </li>
+          <li class="offcanvas_nav__item">
+            <a class="offcanvas_nav__link" href="#">
+              <span class="offcanvas_icons mdi mdi-near-me"></span>
+              <span class="text">Cơ hội việc làm</span>
+            </a>
+          </li>
+          <li class="offcanvas_nav__item">
+            <a class="offcanvas_nav__link" href="#">
+              <span class="offcanvas_icons mdi mdi-laptop"></span>
+              <span class="text">E-learning</span>
+            </a>
+          </li>
+          <li class="offcanvas_nav__item">
+            <a class="offcanvas_nav__link" href="#">
+              <span class="offcanvas_icons mdi mdi-school"></span>
+              <span class="text">Cựu Sinh viên</span>
+            </a>
+          </li>
+          <li class="offcanvas_nav__item">
+            <a class="offcanvas_nav__link" href="#">
+              <span class="offcanvas_icons mdi mdi-folder-account"></span>
+              <span class="text">Tra cứu thông tin học viên</span>
+            </a>
+          </li>
+          <li class="offcanvas_nav__item">
+            <a class="offcanvas_nav__link" href="#">
+              <span class="offcanvas_icons mdi mdi-calendar-check"></span>
+              <span class="text">Lịch thi</span>
+            </a>
+          </li>
+          <li class="offcanvas_nav__divider">
+          </li>
+          <li class="offcanvas_nav__item">
+            <div class="d-block offcanvas_button__close" role="button">
+              <span class="offcanvas_icons mdi mdi-close"></span>Đóng</div>
           </li>
         </ul>
       </div>
