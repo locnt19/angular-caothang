@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PageTrangchuComponent } from './pages/page-trangchu/page-trangchu.component';
 import { PageNotfoundComponent } from './pages/page-notfound/page-notfound.component';
-import { HomeHighlightComponent } from './components/home/home-highlight/home-highlight.component';
+import { SwiperHomehighlightComponent } from './components/swiper/swiper-homehighlight/swiper-homehighlight.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { HomeHighlightComponent } from './components/home/home-highlight/home-hi
     FooterComponent,
     PageTrangchuComponent,
     PageNotfoundComponent,
-    HomeHighlightComponent
+    SwiperHomehighlightComponent
   ],
   imports: [
     BrowserModule,
