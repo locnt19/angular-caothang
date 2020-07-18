@@ -1,10 +1,19 @@
+const https = require('https')
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const cors = require('cors')
+const fs = require('fs')
 const app = express()
 
+const PORT = 4100
 const MONGODB_URI = 'mongodb://localhost:27017/'
+
+// Setting https
+const httpsOptions = {
+  key: fs.readFileSync('./security/cert.key'),
+  cert: fs.readFileSync('./security/cert.crt')
+}
 
 // Connect with MongoDB
 mongoose.connect(MONGODB_URI, {
@@ -26,9 +35,16 @@ mongoose.connection.once('open', () => {
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors())
 
-app.listen(4100, function () {
-  console.log('Backend API running!')
+const apiRoutes = require('./api/api')
+
+app.use('/api', apiRoutes)
+
+app.get('/', (req, res) => {
+  res.send('Welcome to Cao Thang Backend API')
 })
 
-const apiRoutes = require('./api/api')
-app.use('/api', apiRoutes)
+const server = https.createServer(httpsOptions, app)
+
+server.listen(PORT, function () {
+  console.log('Backend API running on port: ' + PORT)
+})
